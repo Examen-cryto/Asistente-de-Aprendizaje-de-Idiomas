@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente de Aprendizaje de Idiomas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Asistente de Aprendizaje de Idiomas</h1>
+    </header>
+
+    <main>
+        <section id="selector-idioma">
+            <h2>Selecciona un Idioma</h2>
+            <select id="idioma">
+                <option value="es-en">Español a Inglés</option>
+                <option value="es-fr">Español a Francés</option>
+                <option value="es-de">Español a Alemán</option>
+            </select>
+            <button id="cargarVocabulario">Cargar Vocabulario</button>
+        </section>
+
+        <section id="vocabulario" class="oculto">
+            <h2>Vocabulario Básico</h2>
+            <ul id="listaVocabulario"></ul>
+        </section>
+
+        <section id="prueba" class="oculto">
+            <h2>Prueba Interactiva</h2>
+            <p id="pregunta"></p>
+            <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+            <button id="verificar">Verificar</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Asistente de Aprendizaje de Idiomas</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
